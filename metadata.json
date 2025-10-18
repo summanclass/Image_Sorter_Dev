@@ -1,0 +1,5 @@
+{
+  "name": "Image Sorter Pro",
+  "description": "An intuitive web application for sorting images with drag-and-drop, featuring a unified grid, real-time order display, dark mode, image zoom, and ZIP download functionality for a seamless workflow.",
+  "requestFramePermissions": []
+}
