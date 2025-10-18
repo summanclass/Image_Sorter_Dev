@@ -99,6 +99,10 @@ export default function App() {
 
   const toggleTheme = () => setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
 
+  const handleReorder = useCallback((newSortedIds: string[]) => {
+    setSortedIds(newSortedIds);
+  }, []);
+
   return (
     <div className="app-container">
        <input
@@ -176,6 +180,7 @@ export default function App() {
                   onRemoveImage={handleRemoveImage}
                   onImageZoom={handleOpenModal}
                   showRemoveButton={false}
+                  onReorder={handleReorder}
                 />
               ) : (
                 <div className="placeholder">
